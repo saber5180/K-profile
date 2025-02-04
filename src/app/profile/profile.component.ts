@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
+  
   template: `
     <div class="form-section">
       <div class="button-group">
@@ -30,12 +31,53 @@ import { Component } from '@angular/core';
       margin: 20px 0;
     }
     
+    
     textarea {
       width: 100%;
       padding: 8px;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
     }
+    .section-title{
+
+color: #2c7a7b;
+      
+    }
+    .form-section {
+          flex: 7; // Changed from flex: 2 to flex: 7 for 70%
+          background: white;
+          padding: 24px;
+          border-radius: 8px;
+        }
+    .button-group {
+    display: flex;
+    gap: 16px;
+
+    button {
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: 1px solid;
+      cursor: pointer;
+
+      &.btn-save {
+        border-color: #2c7a7b;
+        color: #fdffff;
+        border-radius: 20px;
+        background-color: #2c7a7b;
+        height: 50px;
+        width: 100;
+        margin-left: 80%;
+      }
+    }}
+    p{
+
+      color:black;
+    }
+    li{
+
+      color:black;
+    }
   `]
-})
+}
+)
 export class ProfileComponent {}

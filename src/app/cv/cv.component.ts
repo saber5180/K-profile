@@ -75,9 +75,31 @@ export class CvComponent {
     // Photo upload logic
     console.log('Uploading photo...');
   }
-  profileSelected: boolean = false;
 
-onProfileClick() {
-  this.profileSelected = true;
-}
+  profileSelected: boolean = false;
+  informationsSelected: boolean = true;
+  formationsSelected: boolean = false;
+  
+
+  onFormationsClick(): void {
+    this.profileSelected = false;
+    this.informationsSelected = false;
+    this.formationsSelected = true;
+   
+   
+  }
+
+  onInformationsClick(): void {
+    this.profileSelected = false;
+    this.informationsSelected = true;
+    this.formationsSelected = false;
+   
+  }
+
+  onProfileClick(): void {
+    this.profileSelected = true;
+    this.informationsSelected = false;
+    this.formationsSelected = false;
+  
+  }
 }

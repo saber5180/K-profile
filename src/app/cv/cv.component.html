@@ -9,7 +9,7 @@
   
     <div class="content-wrapper">
       <!-- Left Column -->
-      <div class="form-section" *ngIf="!profileSelected">
+      <div class="form-section" *ngIf="informationsSelected">
 
         <div class="button-group">
             <h3 class="section-title">Informations personnelles</h3>
@@ -108,7 +108,7 @@
         </div>
       </div>
       <app-profile *ngIf="profileSelected"></app-profile>
-  
+      <app-formation *ngIf="formationsSelected"></app-formation>
       <!-- Right Column -->
       <div class="sidebar">
         <div class="button-group">
@@ -118,10 +118,10 @@
           </div>
        
         <ul class="sidebar-list">
-            <h3 class="section-title2">Informations personnelles</h3>
+          <li [class.active]="informationsSelected" (click)="onInformationsClick()">Informations personnelles</li>
           <li>Présentation</li>
-          <li>Formations</li>
-          <li (click)="onProfileClick()">Profile</li>
+          <li [class.active]="formationsSelected" (click)="onFormationsClick()">Formations</li>
+          <li [class.active]="profileSelected" (click)="onProfileClick()">Profile</li>
           <li>Langue</li>
           <li>Centre d'intérêt</li>
           <li>Compétences</li>
