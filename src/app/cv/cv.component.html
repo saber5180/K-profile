@@ -1,0 +1,135 @@
+<div class="cv-container">
+    <header>
+      <h2>CV</h2>
+      <button class="download-btn">
+        <span class="material-icons">cloud_download</span> Télécharger mon CV
+      </button>
+      
+    </header>
+  
+    <div class="content-wrapper">
+      <!-- Left Column -->
+      <div class="form-section" *ngIf="!profileSelected">
+
+        <div class="button-group">
+            <h3 class="section-title">Informations personnelles</h3>
+            <button class="btn-save">Enregistrer</button>
+          
+          </div>
+        
+        
+        <div class="photo-section">
+          <span class="photo-label">Photo (optionnelle)</span>
+          <div class="profile-wrapper">
+            <div class="profile-photo">O</div>
+            <div class="profile-info">
+              <div class="name">Mr.exemple</div>
+              <div class="title">Titre</div>
+              <div class="contact">exemple12xemple.com | +33 123 123 123</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group gender">
+          <label>Genre</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender"> Mr.</label>
+            <label><input type="radio" name="gender"> Madame</label>
+            <label><input type="radio" name="gender"> Autre</label>
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="nom">
+          </div>
+          <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" placeholder="Prénom">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label>Titre</label>
+          <input type="text" placeholder="Titre">
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label>Adresse e-mail</label>
+            <input type="email" placeholder="Adresse e-mail">
+          </div>
+          <div class="form-group">
+            <label>Numéro de téléphone</label>
+            <input type="tel" placeholder="Numéro de téléphone">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label>Adresse</label>
+          <input type="text" placeholder="Adresse">
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label>Code postal</label>
+            <input type="text" placeholder="Code postal">
+          </div>
+          <div class="form-group">
+            <label>Ville</label>
+            <input type="text" placeholder="Ville">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label>Date de naissance</label>
+          <input type="text" placeholder="Date de naissance">
+        </div>
+  
+        <div class="form-group">
+          <label>Lieu de naissance</label>
+          <input type="text" placeholder="Lieu de naissance">
+        </div>
+  
+        <div class="form-group">
+          <label>Permis de conduire</label>
+          <input type="text" placeholder="Permis de conduire">
+        </div>
+  
+        <div class="form-group">
+          <label>Nationalité</label>
+          <input type="text" placeholder="Nationalité">
+        </div>
+  
+        <div class="form-group">
+          <label>LinkedIn</label>
+          <input type="text" placeholder="LinkedIn">
+        </div>
+      </div>
+      <app-profile *ngIf="profileSelected"></app-profile>
+  
+      <!-- Right Column -->
+      <div class="sidebar">
+        <div class="button-group">
+           
+            <button class="btn-download">Télécharger un CV existant</button>
+            <button class="btn-linkedin">Importer votre profil LinkedIn</button>
+          </div>
+       
+        <ul class="sidebar-list">
+            <h3 class="section-title2">Informations personnelles</h3>
+          <li>Présentation</li>
+          <li>Formations</li>
+          <li (click)="onProfileClick()">Profile</li>
+          <li>Langue</li>
+          <li>Centre d'intérêt</li>
+          <li>Compétences</li>
+          <li>Certificats</li>
+          <li>Qualités</li>
+          <li>Habilitations</li>
+          <li>Outils</li>
+        </ul>
+      </div>
+    </div>
+  </div>
