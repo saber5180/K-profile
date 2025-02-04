@@ -10,26 +10,13 @@ import { Component } from '@angular/core';
         <button class="btn-save">Enregistrer</button>
       </div>
 
-      <p class="guide-text">
-        Pour améliorer votre CV, il est important d'ajouter un résumé ou un objectif professionnel. 
-        Cela permet de présenter rapidement vos compétences, vos expériences et vos ambitions à un recruteur. 
-        Voici quelques questions pour vous guider :
-      </p>
+      <p>Pour améliorer votre CV, il est important d'ajouter un résumé ou un objectif professionnel. Cela permet de présenter rapidement vos compétences, vos expériences et vos ambitions à un recruteur. Voici quelques questions pour vous guider :</p>
 
-      <div class="form-group">
-        <label>Quelles sont vos principales compétences professionnelles ?</label>
-        <textarea rows="4" placeholder="Vos compétences..."></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Quel est votre domaine d'expertise ou le type de poste que vous recherchez ?</label>
-        <textarea rows="4" placeholder="Votre domaine d'expertise..."></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Quels sont vos objectifs à court ou long terme dans votre carrière ?</label>
-        <textarea rows="4" placeholder="Vos objectifs..."></textarea>
-      </div>
+<ul>
+    <li>Quelles sont vos principales compétences professionnelles ?</li>
+    <li>Quel est votre domaine d'expertise ou le type de poste que vous recherchez ?</li>
+    <li>Quels sont vos objectifs à court ou long terme dans votre carrière ?</li>
+</ul>
 
       <div class="form-group">
         <label>Description</label>
