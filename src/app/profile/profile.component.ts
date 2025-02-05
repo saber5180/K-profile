@@ -44,7 +44,7 @@ color: #2c7a7b;
       
     }
     .form-section {
-          flex: 7; // Changed from flex: 2 to flex: 7 for 70%
+          
           background: white;
           padding: 24px;
           border-radius: 8px;
